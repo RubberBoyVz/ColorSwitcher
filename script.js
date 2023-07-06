@@ -25,6 +25,7 @@ linkNormal.addEventListener("click", setNormal);
 linkHex.addEventListener("click", setHex);
 
 flipColorHex();
+setBGColorBtn();
 
 function setNormal() {
     linkNormal.classList.add("selected");
@@ -49,6 +50,7 @@ function flipColorNormal() {
     let option = Math.floor(Math.random() * (Object.keys(colors).length + 1 - 1) + 1);
     document.body.style.backgroundColor = colors[option];
     h2SpanColor.innerHTML = colors[option];
+    setBGColorSpan();
 }
 
 function flipColorHex() {
@@ -59,4 +61,9 @@ function flipColorHex() {
     }
     document.body.style.backgroundColor = "#" + option;
     h2SpanColor.innerHTML = "#" + option;
+    setBGColorSpan();
+}
+
+function setBGColorSpan() {
+    h2SpanColor.style.color = document.body.style.backgroundColor;
 }

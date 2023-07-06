@@ -67,15 +67,17 @@ nav {
 }
 
 .btn {
-    width: 10rem;
+    width: 15rem;
     height: 5rem;
     border: 0.5rem solid black;
-    background-color: whitesmoke;
+    border-radius: 1rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: white;
+    background-color: black;
 }
 
 .btn:hover {
     cursor: pointer;
-    background-color: antiquewhite;
-    border: 0.5rem solid gray;
 }
